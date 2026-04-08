@@ -1,13 +1,22 @@
 import Header from './components/Header';
 import HeroSection from './sections/HeroSection';
-import AboutSection from './sections/AboutSection';
+import TLDRSection from './sections/TLDRSection';
+import DocumentsSection from './sections/DocumentsSection';
+import RecentActivitySection from './sections/RecentActivitySection';
 import CurrentFocusSection from './sections/CurrentFocusSection';
-import ProjectsSection from './sections/ProjectsSection';
 import ResearchSection from './sections/ResearchSection';
+import ProjectsSection from './sections/ProjectsSection';
+import AboutSection from './sections/AboutSection';
+import DrivesSection from './sections/DrivesSection';
 import ExperienceSection from './sections/ExperienceSection';
+import EducationSection from './sections/EducationSection';
 import SkillsSection from './sections/SkillsSection';
 import TimelineSection from './sections/TimelineSection';
 import LearningSection from './sections/LearningSection';
+import BlogSection from './sections/BlogSection';
+import PapersSection from './sections/PapersSection';
+import SocialsSection from './sections/SocialsSection';
+import GithubActivitySection from './sections/GithubActivitySection';
 import ContactSection from './sections/ContactSection';
 
 function App() {
@@ -22,14 +31,23 @@ function App() {
 
       <main>
         <HeroSection />
-        <AboutSection />
+        <TLDRSection />
+        <DocumentsSection />
+        <RecentActivitySection />
         <CurrentFocusSection />
-        <ProjectsSection />
         <ResearchSection />
+        <ProjectsSection />
+        <BlogSection />
+        <PapersSection />
+        <AboutSection />
+        <DrivesSection />
         <ExperienceSection />
+        <EducationSection />
         <SkillsSection />
         <TimelineSection />
         <LearningSection />
+        <SocialsSection />
+        <GithubActivitySection />
         <ContactSection />
       </main>
     </div>

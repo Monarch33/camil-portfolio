@@ -2,24 +2,16 @@ import Section from '../components/Section';
 import FadeIn from '../components/FadeIn';
 import Card from '../components/Card';
 import ImagePlaceholder from '../components/ImagePlaceholder';
-import { projects } from '../data/content';
+import { projects, projectsIntro } from '../data/content';
 
 function ProjectsSection() {
   return (
-    <Section
-      id="projects"
-      title="Projects"
-      description="A curated set of projects across AI, machine learning, and strategy-oriented execution."
-    >
+    <Section id="projects" title="Current Projects" description={projectsIntro}>
       <div className="grid gap-6 md:grid-cols-2">
         {projects.map((project, index) => (
           <FadeIn key={project.title} delay={0.07 * index}>
             <Card className="group flex h-full flex-col">
-              <ImagePlaceholder
-                label={project.imagePlaceholder}
-                ratio="aspect-[16/10]"
-                className="mb-5"
-              />
+              <ImagePlaceholder label={project.imagePlaceholder} ratio="aspect-[16/10]" className="mb-5" />
 
               <h3 className="font-display text-xl text-zinc-100 transition-colors duration-200 group-hover:text-[var(--accent)]">
                 {project.title}
@@ -42,13 +34,19 @@ function ProjectsSection() {
                   GitHub
                 </a>
                 <a href={project.demo} className="text-zinc-300 transition-colors hover:text-[var(--accent)]">
-                  Demo
+                  Live Demo
                 </a>
               </div>
             </Card>
           </FadeIn>
         ))}
       </div>
+
+      <FadeIn delay={0.2} className="mt-8">
+        <p className="text-center text-sm text-zinc-400">
+          These projects are a sample. I am constantly building and experimenting with new ideas.
+        </p>
+      </FadeIn>
     </Section>
   );
 }

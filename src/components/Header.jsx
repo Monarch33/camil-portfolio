@@ -1,14 +1,23 @@
 import Container from './Container';
 
 const navItems = [
-  { label: 'About', href: '#about' },
+  { label: 'TL;DR', href: '#tldr' },
+  { label: 'Docs', href: '#documents' },
+  { label: 'Activity', href: '#activity' },
   { label: 'Focus', href: '#focus' },
-  { label: 'Projects', href: '#projects' },
   { label: 'Research', href: '#research' },
+  { label: 'Projects', href: '#projects' },
+  { label: 'Blog', href: '#blog' },
+  { label: 'Papers', href: '#papers' },
+  { label: 'About', href: '#about' },
+  { label: 'Drives', href: '#drives' },
   { label: 'Experience', href: '#experience' },
+  { label: 'Education', href: '#education' },
   { label: 'Skills', href: '#skills' },
   { label: 'Timeline', href: '#timeline' },
   { label: 'Reading', href: '#learning' },
+  { label: 'Socials', href: '#socials' },
+  { label: 'GitHub', href: '#github' },
   { label: 'Contact', href: '#contact' },
 ];
 
