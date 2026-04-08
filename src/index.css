@@ -1,0 +1,32 @@
+@import '@fontsource/sora/600.css';
+@import '@fontsource/sora/700.css';
+@import '@fontsource/public-sans/400.css';
+@import '@fontsource/public-sans/500.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-zinc-100 font-body text-zinc-900 antialiased;
+  }
+
+  ::selection {
+    @apply bg-zinc-900 text-zinc-100;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply font-display text-3xl font-semibold tracking-tight text-zinc-900 md:text-4xl;
+  }
+
+  .section-description {
+    @apply mt-4 max-w-2xl text-base leading-relaxed text-zinc-600 md:text-lg;
+  }
+}
