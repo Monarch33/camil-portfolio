@@ -7,26 +7,57 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --bg: #090a0d;
+  --surface: #11131a;
+  --surface-soft: #171a22;
+  --text: #f7f8fb;
+  --muted: #a6adbb;
+  --border: rgba(247, 248, 251, 0.14);
+  --accent: #83a6ff;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
   }
 
   body {
-    @apply bg-zinc-100 font-body text-zinc-900 antialiased;
+    margin: 0;
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Public Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
   }
 
   ::selection {
-    @apply bg-zinc-900 text-zinc-100;
+    background: rgba(131, 166, 255, 0.35);
+    color: #fdfdff;
+  }
+
+  a,
+  button {
+    -webkit-tap-highlight-color: transparent;
   }
 }
 
 @layer components {
   .section-title {
-    @apply font-display text-3xl font-semibold tracking-tight text-zinc-900 md:text-4xl;
+    @apply font-display text-3xl font-semibold tracking-tight text-zinc-100 md:text-4xl;
   }
 
   .section-description {
-    @apply mt-4 max-w-2xl text-base leading-relaxed text-zinc-600 md:text-lg;
+    @apply mt-4 max-w-2xl text-base leading-relaxed text-zinc-400 md:text-lg;
+  }
+
+  .nav-x-scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .nav-x-scroll::-webkit-scrollbar {
+    display: none;
   }
 }

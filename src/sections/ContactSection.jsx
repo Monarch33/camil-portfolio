@@ -12,19 +12,19 @@ function ContactSection() {
     >
       <FadeIn>
         <Card hover={false} className="max-w-2xl">
-          <p className="text-sm text-zinc-500">Email</p>
+          <p className="text-sm uppercase tracking-[0.14em] text-zinc-500">Email</p>
           <a
             href={`mailto:${contact.email}`}
-            className="mt-1 inline-block font-display text-xl text-zinc-900 underline-offset-4 hover:underline"
+            className="mt-2 inline-block font-display text-2xl text-zinc-100 transition-colors hover:text-[var(--accent)]"
           >
             {contact.email}
           </a>
 
-          <div className="mt-6 flex flex-wrap items-center gap-4 text-sm text-zinc-700">
-            <a href={contact.linkedin} className="underline-offset-4 hover:underline">
+          <div className="mt-6 flex flex-wrap items-center gap-4 text-sm text-zinc-300">
+            <a href={contact.linkedin} className="transition-colors hover:text-[var(--accent)]">
               LinkedIn
             </a>
-            <a href={contact.github} className="underline-offset-4 hover:underline">
+            <a href={contact.github} className="transition-colors hover:text-[var(--accent)]">
               GitHub
             </a>
           </div>

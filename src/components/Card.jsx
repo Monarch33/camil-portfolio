@@ -5,9 +5,17 @@ const MotionArticle = motion.article;
 function Card({ children, className = '', hover = true }) {
   return (
     <MotionArticle
-      whileHover={hover ? { y: -5, scale: 1.01 } : undefined}
-      transition={{ type: 'spring', stiffness: 250, damping: 24, mass: 0.7 }}
-      className={`rounded-2xl border border-zinc-300/80 bg-zinc-100/80 p-6 shadow-[0_10px_40px_-24px_rgba(0,0,0,0.35)] backdrop-blur ${className}`}
+      whileHover={
+        hover
+          ? {
+              y: -4,
+              borderColor: 'rgba(131,166,255,0.42)',
+              boxShadow: '0 18px 40px -24px rgba(131,166,255,0.45)',
+            }
+          : undefined
+      }
+      transition={{ type: 'spring', stiffness: 270, damping: 28, mass: 0.7 }}
+      className={`rounded-2xl border border-[rgba(255,255,255,0.12)] bg-[rgba(17,19,26,0.7)] p-6 backdrop-blur-sm ${className}`}
     >
       {children}
     </MotionArticle>

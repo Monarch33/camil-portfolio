@@ -3,7 +3,7 @@ import FadeIn from './FadeIn';
 
 function Section({ id, title, description, children }) {
   return (
-    <section id={id} className="scroll-mt-24 py-20 md:py-28">
+    <section id={id} className="scroll-mt-28 py-20 md:py-28">
       <Container>
         <FadeIn className="mb-10 md:mb-12">
           <h2 className="section-title">{title}</h2>

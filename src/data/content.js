@@ -1,69 +1,70 @@
 export const heroContent = {
   name: 'Camil Teraoui',
   status: 'Student in L1 at IAE',
-  headline: 'Positioning sentence placeholder for AI, ML, and business ambition.',
+  headline: 'Positioning sentence placeholder for AI, machine learning, and business ambition.',
   description:
-    'Short introduction placeholder. Add your mission, what you build, and the impact you want to create.',
+    'Short introduction placeholder. Add your mission, your edge, and the kind of impact you want to create.',
+  portraitPlaceholder: 'Portrait Placeholder (replace with your own headshot).',
 };
 
 export const aboutContent =
-  'Background paragraph placeholder. Describe your journey, why you chose AI and machine learning, and how you connect technology with business and economics.';
+  'Background paragraph placeholder. Explain your journey, how AI and economics intersect in your thinking, and what kind of builder you aim to become.';
 
 export const currentFocus = [
   {
     title: 'Current Focus Item 01',
-    description: 'Placeholder for what you are actively exploring, building, or researching this month.',
+    description: 'Placeholder for a current sprint, research axis, or concrete build direction.',
   },
   {
     title: 'Current Focus Item 02',
-    description: 'Placeholder for a second high-priority topic with clear direction and intent.',
+    description: 'Placeholder for a second strategic area where you are investing deep attention.',
   },
   {
     title: 'Current Focus Item 03',
-    description: 'Placeholder for experiments, coursework, or strategic projects in progress.',
+    description: 'Placeholder for active experiments, coursework, and practical implementation work.',
   },
 ];
 
 export const projects = [
   {
     title: 'Project Placeholder 01',
-    description: 'Brief placeholder describing the challenge, solution, and expected outcome.',
+    description: 'Brief placeholder describing the problem, the system, and expected value.',
     stack: ['React', 'Tailwind', 'Python'],
+    imagePlaceholder: 'Project Visual Placeholder',
     github: '#',
     demo: '#',
   },
   {
     title: 'Project Placeholder 02',
-    description: 'Brief placeholder describing the challenge, solution, and expected outcome.',
+    description: 'Brief placeholder describing the problem, the system, and expected value.',
     stack: ['Machine Learning', 'Pandas', 'Data Visualization'],
+    imagePlaceholder: 'Project Visual Placeholder',
     github: '#',
     demo: '#',
   },
   {
     title: 'Project Placeholder 03',
-    description: 'Brief placeholder describing the challenge, solution, and expected outcome.',
+    description: 'Brief placeholder describing the problem, the system, and expected value.',
     stack: ['Economics', 'Forecasting', 'Dashboard'],
+    imagePlaceholder: 'Project Visual Placeholder',
     github: '#',
     demo: '#',
   },
   {
     title: 'Project Placeholder 04',
-    description: 'Brief placeholder describing the challenge, solution, and expected outcome.',
+    description: 'Brief placeholder describing the problem, the system, and expected value.',
     stack: ['NLP', 'API', 'Product Strategy'],
+    imagePlaceholder: 'Project Visual Placeholder',
     github: '#',
     demo: '#',
   },
 ];
 
 export const researchInterests = [
-  'Machine Learning Systems',
-  'Applied AI for Decision-Making',
-  'Economic Modeling',
-  'Business Intelligence',
-  'Automation & Productivity',
-  'AI Product Strategy',
-  'Data-Driven Management',
-  'Human + AI Collaboration',
+  { title: 'Machine Learning Systems', detail: 'Placeholder for architecture, scale, and reliability interests.' },
+  { title: 'Applied AI for Decision-Making', detail: 'Placeholder for business + AI decision support themes.' },
+  { title: 'Economic Modeling', detail: 'Placeholder for quantitative economics and prediction interests.' },
+  { title: 'AI Product Strategy', detail: 'Placeholder for product framing and user-value exploration.' },
 ];
 
 export const experience = [
@@ -71,19 +72,22 @@ export const experience = [
     role: 'Role Placeholder',
     organization: 'Organization Placeholder',
     period: '20XX - Present',
-    description: 'Placeholder describing impact, ownership, and outcomes from this experience.',
+    description: 'Placeholder describing ownership, impact, and measurable outcomes.',
+    logoPlaceholder: 'Logo Placeholder',
   },
   {
     role: 'Role Placeholder',
     organization: 'Organization Placeholder',
     period: '20XX - 20XX',
-    description: 'Placeholder describing impact, ownership, and outcomes from this experience.',
+    description: 'Placeholder describing ownership, impact, and measurable outcomes.',
+    logoPlaceholder: 'Logo Placeholder',
   },
   {
     role: 'Role Placeholder',
     organization: 'Organization Placeholder',
     period: '20XX - 20XX',
-    description: 'Placeholder describing impact, ownership, and outcomes from this experience.',
+    description: 'Placeholder describing ownership, impact, and measurable outcomes.',
+    logoPlaceholder: 'Logo Placeholder',
   },
 ];
 
@@ -112,10 +116,30 @@ export const timeline = [
 ];
 
 export const learning = [
-  'Learning Topic Placeholder 01',
-  'Book / Paper Placeholder 02',
-  'Concept Placeholder 03',
-  'Course Placeholder 04',
+  {
+    title: 'Reading Item Placeholder 01',
+    note: 'Placeholder note about a current book, paper, or concept.',
+    type: 'Book',
+    coverPlaceholder: 'Book Cover Placeholder',
+  },
+  {
+    title: 'Reading Item Placeholder 02',
+    note: 'Placeholder note about a current book, paper, or concept.',
+    type: 'Paper',
+    coverPlaceholder: 'Paper Cover Placeholder',
+  },
+  {
+    title: 'Reading Item Placeholder 03',
+    note: 'Placeholder note about a current book, paper, or concept.',
+    type: 'Concept',
+    coverPlaceholder: 'Concept Visual Placeholder',
+  },
+  {
+    title: 'Reading Item Placeholder 04',
+    note: 'Placeholder note about a current book, paper, or concept.',
+    type: 'Course',
+    coverPlaceholder: 'Course Visual Placeholder',
+  },
 ];
 
 export const contact = {

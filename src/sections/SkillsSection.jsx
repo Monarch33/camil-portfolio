@@ -14,12 +14,12 @@ function SkillsSection() {
         {Object.entries(skills).map(([category, items], index) => (
           <FadeIn key={category} delay={0.08 * index}>
             <Card>
-              <h3 className="font-display text-lg text-zinc-900">{category}</h3>
+              <h3 className="font-display text-lg text-zinc-100">{category}</h3>
               <div className="mt-4 flex flex-wrap gap-2">
                 {items.map((skill) => (
                   <span
                     key={skill}
-                    className="rounded-full border border-zinc-300 bg-zinc-100 px-2.5 py-1 text-xs text-zinc-700"
+                    className="rounded-full border border-[rgba(255,255,255,0.15)] bg-[rgba(255,255,255,0.04)] px-2.5 py-1 text-xs text-zinc-300"
                   >
                     {skill}
                   </span>
